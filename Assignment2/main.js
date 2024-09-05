@@ -55,6 +55,7 @@ console.log(!bool1);
 let firstName = "John";
 let lastName = "Smith";
 
-let greetingMsg = "Hello " + firstName + " " + lastName + "! Good morning\nand nice to meet you!";
+let greetingMsg = `Hello ${firstName} ${lastName}! Good morning \n
+and nice to meet you!`;
 
 console.log(greetingMsg);
