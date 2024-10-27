@@ -12,7 +12,7 @@ function submitName(){
         display.style.backgroundColor = "#FF0000";
     }
     else{
-        display.innerHTML = `<h3>Welcome, ${inName.value}.</h3>`;
+        display.innerHTML = `<h3>Welcome, ${inName.value}!</h3>`;
         display.style.backgroundColor = "#008000";
     }
 }
@@ -27,6 +27,7 @@ function mouseRun(e){
 inName.addEventListener("keydown", keyboardSubmit);
 function keyboardSubmit(e){
     if(e.key === "Enter"){
+        e.preventDefault();
         submitName();
     }
 }
