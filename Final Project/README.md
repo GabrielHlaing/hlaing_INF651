@@ -23,17 +23,14 @@ This project uses Bootstrap for responsive design and JavaScript for client-side
 * Bootstrap Icons (For icons)
 
 # File Structure
-/Final Project
-│
-├── index.html            # Main page (Home)
-├── pages/
-│   ├── cart.html         # Cart page
-│   ├── checkout.html     # Checkout page
-│   └── about.html        # About page
-├── js/
-│   └── main.js           # JavaScript for functionality
-├── README.md             # Project documentation
-└── Final Project Documentation # PDF documentation
+* /index.html (Main page)
+* /pages/cart.html (Cart page)
+* /pages/checkout.html (Checkout page)
+* /pages/about.html (About page)
+* /js/main.js (JavaScript for functionality)
+* /images (Images for menu items)
+* /README.md (Project documentation)
+* /Final Project Documentation (PDF documentation)
 
 # Usage
 ## Balance Management: 
