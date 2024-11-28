@@ -1,0 +1,208 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Little Shop: Home</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css"/>
+</head>
+  <body>
+        <!-- NavBar -->
+        <nav class="navbar navbar-expand-lg bg-info py-3">
+            <div class="container p-2">
+              <a href="/" class="navbar-brand fs-2 fw-bold">My Little Shop</a>
+              <button
+                class="navbar-toggler ml-auto"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#navmenu"
+              >
+                <span class="navbar-toggler-icon ml-auto"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navmenu">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="/"><i class="bi bi-house-fill"></i> Home</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="/pages/cart.html"><i class="bi bi-cart-fill"></i> View My Cart</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="/pages/checkout.html"><i class="bi bi-clipboard-check-fill"></i> Checkout</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="/pages/about.html"><i class="bi bi-info-circle-fill"></i> About</a>
+                      </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
+
+    <!-- Balance Display and Reset Balance-->
+    <div class="d-grid gap-2 d-flex justify-content-end p-3">
+        <h5 class="text-end text-success me-2 p-2" id="balance"></h5>
+        <button class="btn btn-danger btn-sm p-2" id="reset-balance"><i class="bi bi-bootstrap-reboot"></i> Reset</button>
+      </div>
+
+    <!-- Hero -->
+    <div class="container p-5 border border-dark bg-warning">
+            <h2>Welcome To My Little Shop</h2>
+            <h1 class="text-center fw-bolder">Order Now!</h1>
+            <div class="text-center">
+                <i class="bi bi-arrow-down-square-fill h1"></i>
+            </div>
+    </div>
+
+    <!-- Shopping menu -->
+     <div class="bg-light p-5">
+        <div class="container">
+            <div class="row g-4 p-3">
+                <h3>Rice and Noodles</h3>
+                <div class="col-md-6 col-lg-3">
+                    <div class="card shadow-sm">
+                        <img src="/images/plain-rice.png" class="card-img-top img-fluid rounded" style="height: 250px; width: 300px" alt="Plain Rice" />
+                        <div class="card-body text-center">
+                            <h5 class="card-title fw-bold">Plain Rice</h5>
+                            <p class="card-text text-muted">$1.00</p>
+                            <button class="btn btn-primary" id="plain-rice">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="card shadow-sm">
+                        <img src="/images/fried-rice.png" class="card-img-top img-fluid rounded" style="height: 250px; width: 300px" alt="Fried Rice" />
+                        <div class="card-body text-center">
+                            <h5 class="card-title fw-bold">Fried Rice</h5>
+                            <p class="card-text text-muted">$2.50</p>
+                            <button class="btn btn-primary" id="fried-rice">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="card shadow-sm">
+                        <img src="/images/fried-noodle.png" class="card-img-top img-fluid rounded" style="height: 250px; width: 300px" alt="Fried Noodle" />
+                        <div class="card-body text-center">
+                            <h5 class="card-title fw-bold">Fried Noodle</h5>
+                            <p class="card-text text-muted">$3.00</p>
+                            <button class="btn btn-primary" id="fried-noodle">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="card shadow-sm">
+                        <img src="/images/noodle-soup.png" class="card-img-top img-fluid rounded" style="height: 250px; width: 300px" alt="Noodle Soup" />
+                        <div class="card-body text-center">
+                            <h5 class="card-title fw-bold">Noodle Soup</h5>
+                            <p class="card-text text-muted">$3.50</p>
+                            <button class="btn btn-primary" id="noodle-soup">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row g-4 p-3">
+                <h3>Appetizers</h3>
+                <div class="col-md-6 col-lg-3">
+                    <div class="card shadow-sm">
+                        <img src="/images/fish-n-chips.png" class="card-img-top img-fluid rounded" style="height: 250px; width: 300px" alt="Fish and Chips" />
+                        <div class="card-body text-center">
+                            <h5 class="card-title fw-bold">Fish and Chips</h5>
+                            <p class="card-text text-muted">$4.50</p>
+                            <button class="btn btn-primary" id="fish-n-chips">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="card shadow-sm">
+                        <img src="/images/prawn-tempura.png" class="card-img-top img-fluid rounded" style="height: 250px; width: 300px" alt="Prawn Tempura" />
+                        <div class="card-body text-center">
+                            <h5 class="card-title fw-bold">Prawn Tempura</h5>
+                            <p class="card-text text-muted">$5.00</p>
+                            <button class="btn btn-primary" id="prawn-tempura">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="card shadow-sm">
+                        <img src="/images/chicken-wing.png" class="card-img-top img-fluid rounded" style="height: 250px; width: 300px" alt="Chicken Wings" />
+                        <div class="card-body text-center">
+                            <h5 class="card-title fw-bold">Chicken Wings</h5>
+                            <p class="card-text text-muted">$4.00</p>
+                            <button class="btn btn-primary" id="chicken-wing">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="card shadow-sm">
+                        <img src="/images/pork-rib.png" class="card-img-top img-fluid rounded" style="height: 250px; width: 300px" alt="Fried Pork Ribs" />
+                        <div class="card-body text-center">
+                            <h5 class="card-title fw-bold">Fried Pork Ribs</h5>
+                            <p class="card-text text-muted">$5.50</p>
+                            <button class="btn btn-primary" id="pork-rib">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row g-4 p-3">
+                <h3>Beverages</h3>
+                <div class="col-md-6 col-lg-3">
+                    <div class="card shadow-sm">
+                        <img src="/images/orange-juice.png" class="card-img-top img-fluid rounded" style="height: 250px; width: 300px" alt="Orange Juice" />
+                        <div class="card-body text-center">
+                            <h5 class="card-title fw-bold">Orange Juice</h5>
+                            <p class="card-text text-muted">$1.50</p>
+                            <button class="btn btn-primary" id="orange-juice">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="card shadow-sm">
+                        <img src="/images/coca-cola.png" class="card-img-top img-fluid rounded" style="height: 250px; width: 300px" alt="Coca-cola" />
+                        <div class="card-body text-center">
+                            <h5 class="card-title fw-bold">Coca-cola</h5>
+                            <p class="card-text text-muted">$1.00</p>
+                            <button class="btn btn-primary" id="coca-cola">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="card shadow-sm">
+                        <img src="/images/iced-coffee.png" class="card-img-top img-fluid rounded" style="height: 250px; width: 300px" alt="Iced Coffee" />
+                        <div class="card-body text-center">
+                            <h5 class="card-title fw-bold">Iced Coffee</h5>
+                            <p class="card-text text-muted">$2.00</p>
+                            <button class="btn btn-primary" id="iced-coffee">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="card shadow-sm">
+                        <img src="/images/strawberry-milkshake.png" class="card-img-top img-fluid rounded" style="height: 250px; width: 300px" alt="Strawberry Milkshake" />
+                        <div class="card-body text-center">
+                            <h5 class="card-title fw-bold">Strawberry Milkshake</h5>
+                            <p class="card-text text-muted">$2.50</p>
+                            <button class="btn btn-primary" id="strawberry-milkshake">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Go to cart -->
+    <div class="container text-center p-5">
+        <button  class="btn btn-danger btn-lg"><a href="/pages/cart.html" class="text-decoration-none text-light">View your cart <span class="text-end" id="review-price"></span></a></button>
+      </div>
+
+      <!-- Footer -->
+    <footer class="bg-info text-center position-relative p-3">
+        <div class="container">
+            <i><p>Copyright &copy; 2024 All Rights Preserved<br>
+                By <a href="/">Little Shop</a></p></i>
+        </div>
+    </footer>
+
+    <script src="/js/main.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+  </body>
+</html>
