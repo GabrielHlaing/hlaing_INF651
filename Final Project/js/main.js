@@ -114,7 +114,7 @@ function loadCartOnCartPage() {
             </div>
         `).join("");
     
-        displayTotal.innerHTML = `<div class="bg-info fw-bold text-center p-3">Your Total is: $${totalCost.toFixed(2)}</div>`;
+        displayTotal.innerHTML = `<div class="bg-warning fw-bold text-center p-3">Your Total is: $${totalCost.toFixed(2)}</div>`;
         
         document.getElementById("hungry").style = "display: none";
 
